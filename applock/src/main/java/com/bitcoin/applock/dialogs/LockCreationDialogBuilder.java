@@ -56,7 +56,7 @@ public class LockCreationDialogBuilder extends AppLockDialogBuilder<LockCreation
 
     @Override
     protected void handleCanceled() {
-        super.handleCanceled();
+        super.handleCanceled(); 
 
         if (canceledCallback != null)
             canceledCallback.run();
