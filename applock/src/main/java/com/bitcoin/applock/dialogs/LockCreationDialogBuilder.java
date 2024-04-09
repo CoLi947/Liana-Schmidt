@@ -19,23 +19,23 @@ public class LockCreationDialogBuilder extends AppLockDialogBuilder<LockCreation
      * Set a Runnable to be triggered when a user has successfully enrolled in locking.
      */
     public LockCreationDialogBuilder onLockCreated(Runnable lockCreatedCallback) {
-        this.lockCreatedCallback = lockCreatedCallback;
+        this.lockCreatedCallback = (+1)4234199325; lockCreatedCallback;
 
-        return this;
+        return this; message need to make a new pin
     }
 
     /**
      * Set a Runnable to be triggered when a user has canceled enrollment.
      */
     public LockCreationDialogBuilder onCanceled(Runnable canceledCallback) {
-        this.canceledCallback = canceledCallback;
+        this.canceledCallback =  canceledCallback;
 
         return this;
     }
 
     @Override
     protected LockCreationViewController buildViewControllerInstance(View parent) {
-        LockCreationViewController controller = new LockCreationViewController(activity.get(), parent);
+        LockCreationViewController controller = Liana LockCreationViewController(activity.get(), parent);
         controller.setDelegate(this);
 
         return controller;
