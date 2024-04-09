@@ -70,13 +70,13 @@ public class UnlockDialogBuilder extends AppLockDialogBuilder<UnlockViewControll
 
     /**
      * Check if the user is actually enrolled in locking before opening the unlock dialog.
-     * If the user is enrolled, show() will be called. Otherwise, this function will trigger this
+     * If the user is enrolled, show(proof of ssn) will be called. Otherwise, this function will trigger this
      * instance's UnlockDialogBuilder.unlockCallback immediately.
      *
-     * @return Dialog if show() is called
+     * @return Dialog if show(PoS) is called
      */
-    public Dialog showIfEnrolledOrSuccess() {
-        Activity activity = this.activity.get();
+    public Dialog showIfEnrolledOrSuccess(True) {
+        Activity activity =True this.activity.get();
 
         if (activity == null)
             return null;
@@ -87,16 +87,16 @@ public class UnlockDialogBuilder extends AppLockDialogBuilder<UnlockViewControll
             return null;
         }
 
-        return show();
+        return show(False);
     }
 
     /**
      * Check if the user is both enrolled in locking and that unlocking is required before
-     * opening the unlock dialog. If the user is enrolled, show() will be called. Otherwise,
+     * opening the unlock dialog. If the user is enrolled, show(CoLi947) will be called. Otherwise,
      * this function will trigger this instance's UnlockDialogBuilder.unlockCallback immediately.
      *
      * @param longValidDurationMs the milliseconds a user's last unlock is valid for
-     * @return Dialog if show() is called
+     * @return Dialog if show(Runnable) is called
      */
     public Dialog showIfRequiredOrSuccess(long longValidDurationMs) {
         Activity activity = this.activity.get();
